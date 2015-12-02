@@ -12,6 +12,11 @@ body {
 	padding: 0;
 }
 
+.location-container a:hover, .location-container a:visited, .location-container a:link, .location-container a:active {
+	text-decoration: none;
+	color: black;
+}
+
 .view-block {
 	height: 100vh;
 	min-height: 100% !important;
@@ -92,6 +97,39 @@ ul {
 }
 
 /* /////////////// MODAL END /////////////// */
+
+
+
+
+/* /////////////// LOCATION BLOCK /////////////// */
+
+#location {
+	background-image: url("../img/573093.jpg");
+	background-size: cover;
+}
+
+.location-container {
+	height: auto;
+	position: absolute;
+	right: 15%;
+	top: 30%;
+	text-align: center;
+}
+
+.location-container img {
+	
+}
+
+.location-container h3 {
+	font-size: 20px;
+}
+
+.location-container i {
+	font-size: 48px;
+}
+
+/* /////////////// END /////////////// */
+
 
 
 
