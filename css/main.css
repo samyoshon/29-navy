@@ -25,9 +25,13 @@ body {
 	margin: 0 !important;;
 }
 
-.navbar-fixed {
-	position: fixed;
-	top: -48px;
+.sticky {
+    position: fixed !important;;
+    width: 100%;
+    left: 0;
+    top: 0 !important;;
+    z-index: 100;
+    border-top: 0;
 }
 
 /* /////////////// NAVBAR END /////////////// */
