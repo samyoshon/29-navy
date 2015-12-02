@@ -5,10 +5,26 @@
    ========================================================================== */
 
 
+.view-block {
+	height: 100vh;
+	width: 100%;
+}
 
+.view-block h1 {
+	margin: 0;
+}
 
+.first {
+	background-color: black;
+}
 
+.second {
+	background-color: white;
+}
 
+.third {
+	background-color: black;
+}
 
 
 
