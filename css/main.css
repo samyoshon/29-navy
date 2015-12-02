@@ -12,22 +12,49 @@
 
 .view-block h1 {
 	margin: 0;
+	color: red;
 }
 
-.first {
+.navbar {
+	margin: 0;
+}
+
+.odd {
 	background-color: black;
 }
 
-.second {
+.even {
 	background-color: white;
 }
 
-.third {
-	background-color: black;
+.faq-box-container {
+	margin-top: 30px;
 }
 
+.faq-box {
+	background-color: black;
+	margin: 20px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.faq-box h1 {
+	color: white;
+	font-size: 32px;
 
+/*	margin-left: auto;
+	margin-right: auto;*/
+}
+
+#lofts {
+
+}
+
+#residents {
+	background-color: white;
+}
 
 
 
