@@ -37,6 +37,14 @@ body {
 
 .header-container h1 {
 	margin-left: 25px;
+	font-size: 36px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 25px;
+    padding-top: 5px;
+    padding-left: 0;
 }
 
 /* /////////////// NAVBAR /////////////// */
@@ -173,5 +181,39 @@ body {
 
 
 
+/* /////////////// CONTACT BLOCK /////////////// */
 
+#contact {
+	background-color: black;
+}
+
+.contact-container {
+	padding: 0 !important;
+}
+
+.contact-address ul li {
+	font-size: 24px;
+	color: white;
+}
+
+.contact-files {
+	margin-top: 40px;
+}
+
+.contact-files ul li {
+	font-size: 18px;
+	color: white;
+}
+
+.contact-files ul li i{
+	font-size: 36px;
+	color: white;
+}
+
+.contact-right img {
+	width: 100%;
+	height: 100vh;
+}
+
+/* /////////////// END /////////////// */
 
