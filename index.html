@@ -20,23 +20,26 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
-    <body>
 
-    <!-- Bootstrap Navbar --> 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" id="body-wrap">
+
+<!-- 1st Block // LOCATION -->
+    <div class="view-block odd" id="location">
+      <h1>First</h1>
+    </div>
+
+<!-- Bootstrap Navbar --> 
+    <nav class="navbar navbar-inverse" id="non-stick-navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">29 Navy</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Location</a></li>
+            <li><a href="#location">Location</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#lofts">Lofts</a></li>
             <li><a href="#residents">Residents</a></li>
@@ -46,14 +49,8 @@
         </div>
       <div>
     </nav>
-    <!-- End -->
 
-<!-- 1st Block -->
-    <div class="view-block odd">
-      <h1>First</h1>
-    </div>
-
-<!-- 2nd Block -->
+<!-- 2nd Block // GALLERY -->
     <div class="view-block even" id="gallery">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -139,12 +136,12 @@
       </div>
     </div>
 
-<!-- 3rd Block -->
+<!-- 3rd Block // LOFTS -->
     <div class="view-block odd" id="lofts">
       <h1>Third</h1>
     </div>
 
-<!-- 4th Block -->
+<!-- 4th Block // RESIDENTS -->
     <div class="view-block even" id="residents">
       <!-- Modal -->
       <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -254,12 +251,40 @@
       </div>
     </div>
 
-<!-- 5th Block -->
+<!-- 5th Block // TEAM -->
     <div class="view-block odd" id="team">
-      <h1>Fifth</h1>
+      <div class="col-md-2 container header-container">
+        <h1>Team</h1>
+      </div>
+
+      <div class="col-md-10 container team-box-container">
+        <div class="col-md-5 team-box">
+            <a target="_blank" href="http://www.worthe.com">
+              <h1>Worthe Real Estate Group</h1>
+            </a>
+        </div>
+
+        <div class="col-md-5 team-box">
+            <a target="_blank" href="http://ottodesigngroup.com/">
+              <h1>OGD</h1>
+            </a>
+        </div>
+
+        <div class="col-md-5 team-box">
+            <a target="_blank" href="">
+              <h1>Environment</h1>
+            </a>
+        </div>
+
+        <div class="col-md-5 team-box">
+            <a target="_blank" href="http://www.looking.la">
+              <h1>Looking</h1>
+            </a>
+        </div>
+      </div>
     </div>
 
-<!-- 6th Block -->
+<!-- 6th Block // CONTACT -->
     <div class="view-block even" id="contact">
       <h1>Sixth</h1>
     </div>

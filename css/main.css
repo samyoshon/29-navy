@@ -3,7 +3,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+	padding: 0;
+}
 
 .view-block {
 	height: 100vh;
@@ -15,9 +17,15 @@
 	color: rgb(171, 65, 51);
 }
 
+/* /////////////// NAVBAR /////////////// */
+
 .navbar {
-	margin: 0;
+	/* IMPORTANT!! */
+	border-radius: 0 !important;
+	margin: 0 !important;;
 }
+
+/* /////////////// NAVBAR END /////////////// */
 
 .odd {
 	background-color: black;
@@ -31,30 +39,7 @@
 	margin-top: 20px;
 }
 
-.faq-box-container {
-	margin-top: 30px;
-}
-
-.faq-box {
-	background-color: black;
-	margin: 20px;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-}
-
-/* get rid of text decoration on link */
-.faq-box a {
-
-}
-
-.faq-box h1 {
-	color: white;
-	font-size: 32px;
-	text-align: center;
-}
+/* /////////////// MODAL /////////////// */
 
 .modal {
 	/* IMPORTANT!! */
@@ -71,16 +56,85 @@
 	top: 5%;
 }
 
+/* /////////////// MODAL END /////////////// */
+
+/* /////////////// LOFTS BLOCK /////////////// */
+
 #lofts {
 
 }
 
+/* /////////////// END /////////////// */
+
+/* /////////////// GALLERY BLOCK /////////////// */
+
+
+/* /////////////// END /////////////// */
+
+/* /////////////// RESIDENTS BLOCK /////////////// */
 #residents {
 	background-color: white;
 }
 
 
+.faq-box-container {
+	margin-top: 30px;
+}
 
+.faq-box {
+	background-color: black;
+	margin: 20px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+/* get rid of text decoration on link */
+.faq-box a:hover, .faq-box a:visited, .faq-box a:link, .faq-box a:active {
+	text-decoration: none;
+}
+
+.faq-box h1 {
+	color: white;
+	font-size: 32px;
+	text-align: center;
+}
+/* /////////////// END /////////////// */
+
+/* /////////////// TEAM BLOCK /////////////// */
+
+#team {
+	background-color: white;
+}
+
+.team-box-container {
+	margin-top: 50px;
+}
+
+.team-box {
+	background-color: rgb(255, 245, 236);
+	border: 13px solid black;
+	margin: 20px;
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.team-box h1 {
+	color: black;
+	font-size: 32px;
+	text-align: center;
+}
+
+.team-box a:hover, .team-box a:visited, .team-box a:link, .team-box a:active {
+	text-decoration: none;
+}
+
+/* /////////////// END /////////////// */
 
 
 
