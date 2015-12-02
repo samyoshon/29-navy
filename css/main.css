@@ -25,6 +25,11 @@ body {
 	margin: 0 !important;;
 }
 
+.navbar-fixed {
+	position: fixed;
+	top: -48px;
+}
+
 /* /////////////// NAVBAR END /////////////// */
 
 .odd {
