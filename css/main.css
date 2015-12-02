@@ -3,12 +3,18 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	padding: 0;
 }
 
 .view-block {
 	height: 100vh;
+	min-height: 100% !important;
 	width: 100%;
 }
 
@@ -16,25 +22,6 @@ body {
 	margin: 0;
 	color: rgb(171, 65, 51);
 }
-
-/* /////////////// NAVBAR /////////////// */
-
-.navbar {
-	/* IMPORTANT!! */
-	border-radius: 0 !important;
-	margin: 0 !important;;
-}
-
-.sticky {
-    position: fixed !important;;
-    width: 100%;
-    left: 0;
-    top: 0 !important;;
-    z-index: 100;
-    border-top: 0;
-}
-
-/* /////////////// NAVBAR END /////////////// */
 
 .odd {
 	background-color: black;
@@ -45,8 +32,39 @@ body {
 }
 
 .header-container {
-	margin-top: 20px;
+	margin-top: 65px;
 }
+
+.header-container h1 {
+	margin-left: 25px;
+}
+
+/* /////////////// NAVBAR /////////////// */
+
+.navbar {
+	/* IMPORTANT!! */
+	border-radius: 0 !important;
+	margin: 0 !important;
+}
+
+.navbar-nav > .active > a {
+  color: rgb(171, 65, 51) !important;
+  background-color: transparent !important;
+}
+
+.sticky {
+    position: fixed !important;
+    width: 100%;
+    left: 0;
+    top: 0 !important;;
+    z-index: 100;
+    border-top: 0;
+    margin:10px;
+}
+
+/* /////////////// NAVBAR END /////////////// */
+
+
 
 /* /////////////// MODAL /////////////// */
 
@@ -67,27 +85,36 @@ body {
 
 /* /////////////// MODAL END /////////////// */
 
-/* /////////////// LOFTS BLOCK /////////////// */
 
-#lofts {
-
-}
-
-/* /////////////// END /////////////// */
 
 /* /////////////// GALLERY BLOCK /////////////// */
 
+.carousel-inner {
+	height: 100vh !important;
+	min-height: 100% !important;
+}
 
 /* /////////////// END /////////////// */
 
-/* /////////////// RESIDENTS BLOCK /////////////// */
-#residents {
+
+
+/* /////////////// LOFTS BLOCK /////////////// */
+
+#lofts {
 	background-color: white;
 }
 
+/* /////////////// END /////////////// */
+
+
+
+/* /////////////// RESIDENTS BLOCK /////////////// */
+#residents {
+	background-color: gray;
+}
 
 .faq-box-container {
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .faq-box {
@@ -100,7 +127,6 @@ body {
 	cursor: pointer;
 }
 
-/* get rid of text decoration on link */
 .faq-box a:hover, .faq-box a:visited, .faq-box a:link, .faq-box a:active {
 	text-decoration: none;
 }
@@ -115,11 +141,11 @@ body {
 /* /////////////// TEAM BLOCK /////////////// */
 
 #team {
-	background-color: white;
+	background-color: yellow;
 }
 
 .team-box-container {
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 .team-box {
