@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	
+	//Sticky navbar on scroll
 	var mn = $(".navbar");
     mns = "navbar-scrolled";
     hdr = $('#location').height();
@@ -11,6 +13,8 @@ $(document).ready(function() {
 		}
 	});
 
+
+	//Smooth scroll
 	$("a[href^='#']").on('click', function(e) {
 
 		// prevent default anchor click behavior
@@ -31,5 +35,10 @@ $(document).ready(function() {
 
 	});
 
+
+	//Collapses navbar on click
+	$('.nav a').on('click', function(){
+		$('.navbar-toggle').click();
+	});
 });
 
