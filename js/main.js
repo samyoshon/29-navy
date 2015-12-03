@@ -52,6 +52,6 @@ $(document).ready(function() {
 		} else {
 			$('.floorplan').append('<img src="img/floorplan-level-1.png">');
 		}
-	})
+	});
 });
 
