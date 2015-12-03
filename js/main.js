@@ -40,5 +40,18 @@ $(document).ready(function() {
 	$('.nav a').on('click', function(){
 		$('.navbar-toggle').click();
 	});
+
+
+	//Show floorplan on click
+	$('.loft-front-divs').on('click', function(){
+		$('.floorplan').empty();
+		if ($(this).attr("id") === "floor-3") {
+			$('.floorplan').append('<img src="img/floorplan-level-1.png">');
+		} else if ($(this).attr("id") === "floor-2") {
+			$('.floorplan').append('<img src="img/29-navy-front.png">');
+		} else {
+			$('.floorplan').append('<img src="img/floorplan-level-1.png">');
+		}
+	})
 });
 

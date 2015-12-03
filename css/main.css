@@ -15,7 +15,7 @@ body {
 
 .view-block {
 	height: 100vh;
-	max-height: 680px !important;
+	min-height: 680px !important;
 	width: 100%;
 }
 
@@ -193,13 +193,29 @@ ul {
 	text-align: center;
 }
 
-.loft-front-image {
-	background-image: url('../img/29-navy-front.png');
+/*.loft-front-image {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}*/
+
+.loft-front-container {
+	background-image: url("../img/29-navy-front.png");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
 }
 
 .loft-front-divs {
-	height: 33%;
+	height: 38px;
+	width: 100%;
+}
+
+.loft-front-divs:hover {
+	background-color: rgba(255, 255,255, 0.4);
 }
 
 /* /////////////// END /////////////// */
