@@ -222,6 +222,7 @@ ul {
 .loft-front-divs {
 	height: 38px;
 	width: 100%;
+	cursor: pointer;
 }
 
 .loft-front-divs:hover {
