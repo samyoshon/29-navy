@@ -10,6 +10,7 @@ html, body {
 
 body {
 	padding: 0;
+/*	padding-top: 100vh; Uncomment for scrollover*/
 }
 
 .location-container a:hover, .location-container a:visited, .location-container a:link, .location-container a:active {
@@ -58,6 +59,8 @@ ul {
 	/* IMPORTANT!! */
 	border-radius: 0 !important;
 	margin: 0 !important;
+	z-index: 150;
+	margin-bottom: -50px !important;
 }
 
 .navbar-nav > .active > a {
@@ -65,14 +68,13 @@ ul {
   background-color: transparent !important;
 }
 
-.sticky {
+.navbar-scrolled {
     position: fixed !important;
     width: 100%;
     left: 0;
     top: 0 !important;;
     z-index: 100;
     border-top: 0;
-    margin:10px;
 }
 
 /* /////////////// NAVBAR END /////////////// */
@@ -106,6 +108,9 @@ ul {
 #location {
 	background-image: url("../img/573093.jpg");
 	background-size: cover;
+/*	position: fixed; Uncomment for scrollover */
+/*	top: 0;*/
+/*	width: 100%;*/
 }
 
 .location-container {
@@ -114,10 +119,6 @@ ul {
 	right: 15%;
 	top: 30%;
 	text-align: center;
-}
-
-.location-container img {
-	
 }
 
 .location-container h3 {
@@ -130,10 +131,15 @@ ul {
 
 /* /////////////// END /////////////// */
 
-
-
+/*#gallery, #lofts, #residents, #team, #contact {
+	position: relative;
+} Uncomment for scrollover*/
 
 /* /////////////// GALLERY BLOCK /////////////// */
+
+#gallery {
+	padding-top: 50px;
+}
 
 .carousel-inner {
 	height: 100vh !important;
@@ -248,9 +254,11 @@ ul {
 	color: white;
 }
 
-.contact-right img {
-	width: 100%;
+.contact-right {
+	background-image: url('../img/654162.jpg');
+	background-size: cover;
 	height: 100vh;
+	background-position-x: 25%;
 }
 
 /* /////////////// END /////////////// */

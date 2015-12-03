@@ -1,23 +1,15 @@
 $(document).ready(function() {
-	var stickyNavTop = $('nav').offset().top-1;
-	console.log(stickyNavTop);
-	 
-	var stickyNav = function(){
-		var scrollTop = $(window).scrollTop();
+	var mn = $(".navbar");
+    mns = "navbar-scrolled";
+    hdr = $('#location').height();
 
-		if (scrollTop > stickyNavTop) {
-			$('nav').addClass('sticky');
-		} else {
-			$('nav').removeClass('sticky');
-		}
-	};
-	 
-	stickyNav();
-	 
 	$(window).scroll(function() {
-		stickyNav();
+		if( $(this).scrollTop() > hdr ) {
+			mn.addClass(mns);
+		} else {
+			mn.removeClass(mns);
+		}
 	});
-
 
 	$("a[href^='#']").on('click', function(e) {
 
