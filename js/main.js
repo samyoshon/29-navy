@@ -37,6 +37,8 @@ $(document).ready(function() {
 
 
 	//Collapses navbar on click
+	//Create glitch in desktop mode but needed more mobile
+
 	$('.nav a').on('click', function(){
 		$('.navbar-toggle').click();
 	});

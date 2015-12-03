@@ -1,6 +1,16 @@
+@font-face{ 
+	font-family: 'SofiaProLight-webfont';
+	src: url('../font/SofiaProLight-webfont.eot');
+	src: url('../font/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/SofiaProLight-webfont.woff') format('woff'),
+	     url('../font/SofiaProLight-webfont.ttf') format('truetype'),
+	     url('../font/SofiaProLight-webfont.svg#webfont') format('svg');
+}
+
 html, body {
 	height: 100%;
 	margin: 0;
+	font-family: 'SofiaProLight-webfont' !important;
 }
 
 body {
