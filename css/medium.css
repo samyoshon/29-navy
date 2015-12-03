@@ -1,0 +1,23 @@
+@media screen and (max-width: 991px) {
+	.loft-front-container {
+		background-image: url("../img/29-navy-front.png");
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-size: cover;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.loft-front-divs {
+		height: 100px;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.loft-front-divs:hover {
+		background-color: rgba(255, 255,255, 0.4);
+	}
+}
